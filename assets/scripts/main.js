@@ -48,7 +48,7 @@ if($(window).width() > 500) {
 
     
     $('.background').css('backgroundImage', 'url("assets/images/design.jpg")')
-    $('.design').css('background', '#ffff00')
+    $('.design').css('background', '#faf06f')
     
     
 //    $('.design').css('opacity', '0')
@@ -87,7 +87,7 @@ if($(window).width() > 500) {
 
     
     $('.background').css('backgroundImage', 'url("assets/images/code.jpg")')
-    $('.code').css('background', '#ffff00')
+    $('.code').css('background', '#faf06f')
     
     $('.design').css('opacity', '0')
 //    $('.code').css('opacity', '0')
@@ -124,7 +124,7 @@ if($(window).width() > 500) {
 
     
     $('.background').css('backgroundImage', 'url("assets/images/content.jpg")')
-    $('.content').css('background', '#ffff00')
+    $('.content').css('background', '#faf06f')
     
     $('.design').css('opacity', '0')
     $('.code').css('opacity', '0')
@@ -161,7 +161,7 @@ if($(window).width() > 500) {
 
     
     $('.background').css('backgroundImage', 'url("assets/images/storage.jpg")')
-    $('.storage').css('background', '#ffff00')
+    $('.storage').css('background', '#faf06f')
     
     $('.design').css('opacity', '0')
     $('.code').css('opacity', '0')
@@ -198,7 +198,7 @@ if($(window).width() > 500) {
 
     
     $('.background').css('backgroundImage', 'url("assets/images/fulfillment.jpg")')
-    $('.fulfillment').css('background', '#ffff00')
+    $('.fulfillment').css('background', '#faf06f')
     
     $('.design').css('opacity', '0')
     $('.code').css('opacity', '0')
@@ -237,7 +237,7 @@ if($(window).width() > 500) {
 
     
     $('.background').css('backgroundImage', 'url("assets/images/mail.jpg")')
-    $('.mail').css('background', '#ffff00')
+    $('.mail').css('background', '#faf06f')
     
     $('.design').css('opacity', '0')
     $('.code').css('opacity', '0')
@@ -275,7 +275,7 @@ if($(window).width() > 500) {
 
     
     $('.background').css('backgroundImage', 'url("assets/images/follow.jpg")')
-    $('.follow').css('background', '#ffff00')
+    $('.follow').css('background', '#faf06f')
     
     $('.design').css('opacity', '0')
     $('.code').css('opacity', '0')
