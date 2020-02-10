@@ -1,0 +1,617 @@
+<html>
+  <head>
+    <title>ASOM Project</title>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/grid.css"/>
+    <link rel="stylesheet" href="assets/css/paperback.css"/>
+  </head>
+  <body>
+    
+    
+    
+    
+    
+    
+    <style>
+      body{
+        background-color: #fff;
+      }
+      .relative{
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: -44px;
+      }
+      #spot{
+        padding-top: 0px;
+      }
+      #spot #media{
+        display: block;
+        height: 625px;
+        width: 100%;
+        background-color: red;
+        margin-top: 0px;
+        position: relative;
+        overflow: hidden;
+      }
+      #spot #media>.side{
+        display: block;
+        width: 50%;
+        height: 625px;
+        background-color: cadetblue;
+        float: left;
+        overflow: hidden;
+      }
+      #spot #media>.side .panel{
+        display: block;
+        background-color: #fff;
+        transition: background-color .25s ease-out;
+      }
+      #spot #media>.side:first-child .panel{
+        width: 100%;
+        height: 625px;
+        box-sizing: border-box;
+        border: 1px solid #333;
+        border-right: 0px;
+      }
+      #spot #media>.side:nth-child(2) .panel{
+        width: 50%;
+        height: 313px;
+        box-sizing: border-box;
+        border: 1px solid #333;
+        border-right: 0px;
+        float: left;
+      }
+      #spot #media>.side:nth-child(2) .panel:nth-child(2){
+        border-right: 1px solid #333;
+      }
+      #spot #media>.side:nth-child(2) .panel:nth-child(3){
+        height: 312px;
+        border-top: 0px;
+      }
+      #spot #media>.side:nth-child(2) .panel:nth-child(4){
+        height: 312px;
+        border-top: 0px;
+        border-right: 1px solid #333;
+      }
+      #spot #media:hover>.side .panel{
+        cursor: pointer;
+        background-color: #777;
+        transition: background-color .25s ease-out;
+      }
+      #spot #media:hover>.side .panel:hover{
+        cursor: pointer;
+        background-color: #fff;
+        transition: background-color .25s ease-out;
+      }
+      #spot #media>.side .panel{
+        background-position: center center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+      }
+    </style>
+    <style>
+      #spot #data{
+        display: block;
+        width: 1380px;
+/*        background-color: rebeccapurple;*/
+        min-height: 2800px;
+        margin: auto;
+        margin-top: 64px;
+      }
+      #spot #data>.reserve{
+        display: block;
+        width: 380px;
+        min-height: 200px;
+/*        background-color: blue;*/
+        float: left;
+        position: sticky;
+        top: 64px;
+        padding: 0px 40px;
+      }
+      #spot #data>.reserve>.inner{
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: 520px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 1px;
+      }
+    </style>
+    <style>
+      #spot #data>.description{
+        display: block;
+        width: 880px;
+        min-height: 900px;
+/*        background-color: red;*/
+        float: left;
+        padding: 0px 10px;
+      }
+      #spot #data>.description>.row{
+        width: 100%;
+/*        background-color: aqua;*/
+      }
+      #spot #data>.description>.row::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      #spot #data>.description>.row>.col-1, #spot #data>.description>.row>.col-2, #spot #data>.description>.row>.col-3, #spot #data>.description>.row>.col-4{
+        margin: 0px 10px;
+        float: left;
+/*        background-color: burlywood;*/
+      }
+      #spot #data>.description>.row>.col-1::after, #spot #data>.description>.row>.col-2::after, #spot #data>.description>.row>.col-3::after, #spot #data>.description>.row>.col-4::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      #spot #data>.description>.row>.col-1{
+        width: 200px;
+      }
+      #spot #data>.description>.row>.col-2{
+        width: 420px;
+      }
+      #spot #data>.description>.row>.col-3{
+        width: 640px;
+      }
+      #spot #data>.description>.row>.col-4{
+        width: 860px;
+      }
+      #spot #data>.description>#perks ul.tip{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      #spot #data>.description>#perks ul.tip>li>.l{
+        display: inline-block;
+        vertical-align: top;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+      }
+      #spot #data>.description>#perks ul.tip>li>.r{
+        display: inline-block;
+        vertical-align: top;
+      }
+      #spot #data>.description .line{
+        display: block;
+        padding-top: 36px;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+      }
+      #spot #data>.description>.row{
+        padding-top: 24px;
+      }
+      #spot #data>.description>.row#overview{
+        padding-top: 0px;
+      }
+      
+      #spot #data>.description>#overview .profile-thumb{
+        display: block;
+        height: 120px;
+        width: 120px;
+        float: right;
+        text-align: center;
+      }
+      #spot #data>.description>#overview .profile-thumb>.pic{
+        display: block;
+        width: 78px;
+        height: 78px;
+        border-radius: 100%;
+        background-color: #fce2e9;
+        border-radius: 1px solid #eee;
+        margin: 0px 20px;
+      }
+      #spot #data>.description>#overview .profile-thumb>.username{
+        padding-top: 4px;
+        opacity: .33;
+      }
+      #spot #data>.description>#overview .title{
+        font-weight: 500;
+        font-size: 2.5em;
+      }
+      #spot #data>.description>#overview .catcit{
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1em;
+        padding-top: 7px;
+        opacity: .33;
+      }
+      #spot #data>.description>#perks li{
+        padding-bottom: 12px;
+      }
+      #spot #data>.description>#perks li:last-child{
+        padding-bottom: 0px;
+      }
+      #spot #data>.description>#perks .title{
+        font-weight: 500;
+      }
+      #spot #data>.description>#description .contact{
+        color: #f9c7d7;
+        font-weight: 500;
+        font-size: 1.25em;
+      }
+      #spot #data>.description>#specs ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      #spot #data>.description>#specs>div>.title, #spot #data>.description>#availability>div>.title{
+        font-weight: 500;
+        font-size: 1.25em;
+        padding-bottom: 24px;
+      }
+      #spot #data>.description>#specs ul>li{
+        padding-bottom: 12px;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        box-sizing: border-box;
+      }
+      #spot #data>.description>#specs ul>li:nth-child(odd){
+        padding-right: 10px;
+      }
+      #spot #data>.description>#specs ul>li:nth-child(even){
+        padding-left: 10px;
+      }
+      #spot #data>.description>#specs ul>li:last-child, #spot #data>.description>#specs ul>li:nth-last-child(2){
+        padding-bottom: 0px;
+      }
+      #spot #data>.description>#specs ul>li>.l{
+        display: inline-block;
+        vertical-align: top;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+      }
+      #spot #data>.description>#specs ul>li>.r{
+        display: inline-block;
+        vertical-align: top;
+      }
+      #spot #data>.description>#specs ul>li>.r>.title{
+        font-weight: 500;
+      }
+    </style>
+    
+    
+    <style>
+      #spot #data>.description>#availability .note{
+        padding-bottom: 36px;
+      }
+      #spot #data>.description>#availability .cals{
+        display: block;
+        height: 380px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      #spot #data>.description>#availability .cals>.fixed{
+        position: absolute;
+        top: 0;
+        z-index: 2;
+      }
+      #spot #data>.description>#availability .cals>.fixed>.d{
+        width: 100%;
+      }
+      #spot #data>.description>#availability .cals>.fixed>.d>.l, #spot #data>.description>#availability .cals>.fixed>.d>.r{
+        float: left;
+        margin: 0px 40px;
+      }
+      #spot #data>.description>#availability .cals>.fixed>.d>.l>.month, #spot #data>.description>#availability .cals>.fixed>.d>.r>.month{
+        display: block;
+        height: 50px;
+        width: 350px;
+      }
+      #spot #data>.description>#availability .cals>.fixed>.d>.l>.month>.arrow, #spot #data>.description>#availability .cals>.fixed>.d>.r>.month>.arrow{
+        display: block;
+        width: 75px;
+        text-align: center;
+        height: 50px;
+        line-height: 52px;
+      }
+      #spot #data>.description>#availability .cals>.fixed>.d>.r>.month>.arrow{
+        float: right;
+      }
+      #spot #data>.description>#availability .cals>.fixed>.d .days>div{
+        display: block;
+        height: 30px;
+        width: 50px;
+        line-height: 32px;
+        float: left;
+        text-align: center;
+        overflow: hidden;
+        font-size: .85em;
+      }
+      #spot #data>.description>#availability .cals>.calendar{
+        top: 0;
+        position: absolute;
+        z-index: 1;
+        width: 5160px;
+      }
+      #spot #data>.description>#availability .cals>.calendar>.month{
+        display: block;
+        width: 350px;
+        padding: 0px 40px;
+        float: left;
+      }
+      #spot #data>.description>#availability .cals>.calendar>.month>.title{
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 0px 0px 30px;
+        line-height: 52px;
+        text-align: center;
+        font-weight: 500;
+      }
+      #spot #data>.description>#availability .cals>.calendar>.month>.days>.day{
+        display: block;
+        width: 50px;
+        height: 50px;
+        float: left;
+        line-height: 50px;
+        font-weight: 500;
+        text-align: center;
+        color: #6589fc;
+      }
+      #spot #data>.description>#availability .cals>.calendar>.month>.days>.day.taken{
+        color: #ccc;
+        cursor: default;
+        pointer-events: none;
+      }
+      #spot #data>.description>#location .title{
+        font-weight: 500;
+        font-size: 1.25em;
+        padding-bottom: 24px;
+      }
+      #spot #data>.description>#location .note{
+        padding-bottom: 36px;
+      }
+      #spot #data>.description>#location .map{
+        display: block;
+        background-color: #d6defe;
+        width: 860px;
+        height: 440px;
+        margin-bottom: 36px;
+      }
+      #spot #data>.description>#location .contact{
+        color: #f9c7d7;
+        font-weight: 500;
+        font-size: 1.25em;
+      }
+      
+    </style>
+    
+    
+    
+    
+    
+    
+    <div id="spot" class="middle">
+      <div id="logo"><span>ASOM Project</span></div>
+      <div id="login"><span>Registrate ó Inicia Sesión</span></div>
+      <div class="relative">
+        <div id="media">
+          <div class="side">
+            <div class="panel" style="background-image: url(https://www.reformcph.com/inspiration/2019-05-19-match-shoot/media/003-693d0836.jpg)"></div>
+          </div>
+          <div class="side">
+            <div class="panel" style="background-image: url(https://www.reformcph.com/inspiration/2019-05-19-match-shoot/media/004-cd6c3f10.jpg)"></div>
+            <div class="panel" style="background-image: url(https://www.reformcph.com/inspiration/2019-05-19-match-shoot/media/007-d9288931.jpg)"></div>
+            <div class="panel" style="background-image: url(https://www.reformcph.com/inspiration/2019-05-19-match-shoot/media/006-8c4cdf8a.jpg)"></div>
+            <div class="panel" style="background-image: url(https://www.reformcph.com/inspiration/2019-05-19-match-shoot/media/002-1cdd0381.jpg)"></div>
+          </div>
+        </div>
+        <div id="data">
+          <div class="description">
+            <div id="overview" class="row">
+              <div  class="col-3">
+                <div class="title">Red Modern 20th Century</div>
+                <div class="catcit">Cocina</div>
+              </div>
+              <div class="col-1">
+                <div class="profile-thumb">
+                  <div class="pic"></div>
+                  <div class="username">Veronica Rodriguez</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div id="perks" class="row">
+              <div class="col-4">
+                <ul class="tip">
+                  <li><div class="l"><div>+</div></div><div class="r"><div class="title">High Visibility</div><div class="description">Description</div></div></li>
+                  <li><div class="l"><div>+</div></div><div class="r"><div class="title">Creative</div><div class="description">Description</div></div></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div id="description" class="row">
+              <div  class="col-4">
+                <p>
+                  Relax, rejuvenate and unplug in this ultimate rustic getaway experience in the country. In our beautiful screened Pondhouse, you can gaze at the stars and listen to the sounds of nature from your cozy warm bed. Feel the breeze as you sleep in this magical place unlike any other you will have ever seen. Your whole being will be nourished by your time spent here. There is the Pondhouse itself, the outdoor fire pit, meditation spots around the pond, and trails nearby for walking in the woods
+                </p>
+                <div class="contact">
+                  Contact Host
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div id="specs" class="row">
+              <div class="col-4">
+                <div class="title">Specification</div>
+              </div>
+              <div class="col-4">
+                <ul>
+                  <li><div class="l"><div>+</div></div><div class="r"><div class="title">Dimensions</div><div class="description">14m x 5m</div></div></li><li><div class="l"><div>+</div></div><div class="r"><div class="title">Formats</div><div class="description">Print, Paint, Cardboard.</div></div></li><li><div class="l"><div>+</div></div><div class="r"><div class="title">Dimensions</div><div class="description">14m x 5m</div></div></li><li><div class="l"><div>+</div></div><div class="r"><div class="title">Formats</div><div class="description">Print, Paint, Cardboard.</div></div></li><li><div class="l"><div>+</div></div><div class="r"><div class="title">Dimensions</div><div class="description">14m x 5m</div></div></li><li><div class="l"><div>+</div></div><div class="r"><div class="title">Formats</div><div class="description">Print, Paint, Cardboard.</div></div></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div id="availability" class="row">
+              <div class="col-4">
+                <div class="title">Availablity</div>
+              </div>
+              <div class="col-4 note">
+                Schedule the date to install in your house
+              </div>
+              <div class="col-4">
+                <div class="cals">
+                  <div class="fixed">
+                    <div class="d">
+                      <div class="l">
+                        <div class="month">
+                          <div class="arrow">+</div>
+                        </div>
+                        <div class="days">
+                          <div>Su</div>
+                          <div>Mo</div>
+                          <div>Tu</div>
+                          <div>We</div>
+                          <div>Th</div>
+                          <div>Fr</div>
+                          <div>Sa</div>
+                        </div>
+                      </div>
+                      <div class="r">
+                        <div class="month">
+                          <div class="arrow">+</div>
+                        </div>
+                        <div class="days">
+                          <div>Su</div>
+                          <div>Mo</div>
+                          <div>Tu</div>
+                          <div>We</div>
+                          <div>Th</div>
+                          <div>Fr</div>
+                          <div>Sa</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calendar">
+                    <div class="month">
+                      <div class="title">January 2019</div>
+                      <div class="days">
+                        <div class="day" style="margin-left: 50px;">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day taken">5</div>
+                        <div class="day taken">6</div>
+                        <div class="day taken">7</div>
+                        <div class="day taken">8</div>
+                        <div class="day taken">9</div>
+                        <div class="day taken">10</div>
+                        <div class="day taken">11</div>
+                        <div class="day taken">12</div>
+                        <div class="day taken">13</div>
+                        <div class="day taken">14</div>
+                        <div class="day taken">15</div>
+                        <div class="day taken">16</div>
+                        <div class="day taken">17</div>
+                        <div class="day taken">18</div>
+                        <div class="day taken">19</div>
+                        <div class="day taken">20</div>
+                        <div class="day taken">21</div>
+                        <div class="day taken">22</div>
+                        <div class="day taken">23</div>
+                        <div class="day taken">24</div>
+                        <div class="day">25</div>
+                        <div class="day">26</div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                        <div class="day">29</div>
+                        <div class="day">30</div>
+                        <div class="day">31</div>
+                      </div>
+                    </div>
+                    <div class="month">
+                      <div class="title">February 2019</div>
+                      <div class="days">
+                        <div class="day" style="margin-left: 200px;">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day">5</div>
+                        <div class="day">6</div>
+                        <div class="day">7</div>
+                        <div class="day">8</div>
+                        <div class="day">9</div>
+                        <div class="day">10</div>
+                        <div class="day">11</div>
+                        <div class="day">12</div>
+                        <div class="day">13</div>
+                        <div class="day">14</div>
+                        <div class="day">15</div>
+                        <div class="day">16</div>
+                        <div class="day">17</div>
+                        <div class="day">18</div>
+                        <div class="day">19</div>
+                        <div class="day">20</div>
+                        <div class="day">21</div>
+                        <div class="day">22</div>
+                        <div class="day">23</div>
+                        <div class="day">24</div>
+                        <div class="day">25</div>
+                        <div class="day">26</div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div id="location" class="row">
+              <div class="col-4">
+                <div class="title">Watch this scene in action</div>
+              </div>
+              <div class="col-4 note">
+                Prveious work of this scene
+              </div>
+              <div class="col-4">
+                <div class="map">
+                  <img style="height:100%" src="https://www.reformcph.com/inspiration/2019-10-18-match-vejby/media/001-b6d9fd82.jpg"/>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="contact">
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="reserve">
+            <div class="inner">
+              <div class="price">
+                <span>Now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bottom">
+      <div id="settings"><span>Language, Currency &amp; More..</span></div>
+    </div>
+  </body>
+</html>

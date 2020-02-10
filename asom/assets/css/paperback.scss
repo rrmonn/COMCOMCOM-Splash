@@ -1,0 +1,497 @@
+.top, .middle, .bottom{
+  display: block;
+  position: relative;
+  width: 100%;
+//  opacity: .25;
+}
+.top{
+  background-color: #fff;
+}
+.middle{
+//  height: auto;
+  background-color: #fff;
+  padding-top: 10px;
+}
+#bottom{
+  height: 400px;
+  background-color: #d6defe;
+}
+#anouncements{
+  display: block;
+  width: 100%;
+//  background-color: aquamarine;
+  box-sizing: border-box;
+  padding-bottom: 0px;
+  position: relative;
+  font-family: sangbleu;
+}
+#anouncements>.inner{
+  background-color: #d6defe;
+  text-align: center;
+  height: 33px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 7px;
+  font-size: .95em;
+  font-weight: 500;
+}
+#anouncements>.inner>span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+#logo{
+  display: block;
+  position: sticky;
+  float: left;
+  top: 10px;
+  left: 10px;
+  width: 155px;
+  height: 44px;
+  background-color: #fbc340;;
+  text-align: center;
+  overflow: hidden;
+  z-index: 100;
+}
+#logo>span{
+  font-weight: 500;
+  color: #222;
+  display: block;
+  padding-top: 12px;
+  letter-spacing: .05em;
+  pointer-events: none;
+}
+#login{
+  display: block;
+  position: sticky;
+  float: right;
+  top: 10px;
+  right: 10px;
+  width: auto;
+  height: 44px;
+  padding-left: 44px;
+  padding-right: 44px;
+  background-color: #222;
+  text-align: center;
+  overflow: hidden;
+  z-index: 100;
+}
+#login>span{
+  font-weight: 300;
+  display: block;
+  padding-top: 12px;
+  pointer-events: none;
+  color: #fff;
+}
+#login:hover>span{
+  text-decoration: underline;
+}
+#settings{
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: auto;
+  height: 33px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #f7f7f7;
+  text-align: center;
+  overflow: hidden;
+  float: right;
+  cursor: pointer;
+  z-index: 100;
+}
+#settings>span{
+  font-weight: 300;
+  color: #222;
+  display: block;
+  padding-top: 7px;
+  pointer-events: none;
+}
+#settings:hover>span{
+  text-decoration: underline;
+}
+
+
+
+
+#hero{
+  display: block;
+  width: 100%;
+//  background-color: #f7f7f7;
+  margin-top: -10px;
+  position: relative;
+}
+#hero>.bg{
+  display: block;
+  position: absolute;
+//  background-color: blue;
+  float: right;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 352px;
+}
+#hero>.bg>.media{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+#hero>.bg>.media>img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: .8
+}
+#hero>.data{
+  display: block;
+  width: 40%;
+  padding: 258px 0px 268px 44px;
+//  background-color: aliceblue;
+  position: relative;
+  overflow: hidden;
+}
+#hero>.data>h1{
+  margin-top: 7px;
+  max-width: 520px;
+  font-size: 2em;
+  margin-top: -8px;
+  line-height: 1.3em;
+  font-family: sangbleu;
+}
+#hero>.data>p{
+  max-width: 80%;
+  font-size: 1.2em;
+  padding-top: 16px;
+}
+#hero>.data>.search{
+  height: 44px;
+  width: 100%;
+  background-color: #f7f7f7;
+  line-height: 48px;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #aaa;
+  box-sizing: border-box;
+  padding-left: 44px;
+  margin-top: 35px;
+}
+#hero>.data>.latest{
+  padding-top: 17px;
+  max-width: 100%;
+  height: 22px;
+  overflow: hidden;
+}
+#hero>.data>.latest>span{
+  display: inline-block;
+  padding: 0px 10px;
+  background-color: #d6defe;
+  font-size: 12px;
+  height: 22px;
+  overflow: hidden;
+  margin-bottom: -5px;
+  line-height: 26px;
+}
+#hero>.data>.latest>span.info{
+  background-color: transparent;
+  font-weight: 500;
+  padding-left: 0px;
+}
+
+#brands{
+  width: 100%;
+  padding: 132px 0px;
+}
+#brands>div{
+  position: relative;
+}
+#brands>div>.badge{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  margin-left: -88px;
+  margin-top: -66px;
+}
+#brands>div>.badge>.bg{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/badge.svg);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+  -webkit-animation: badgert 10s linear 0s infinite normal forwards running;
+  animation: badgert 10s linear 0s infinite normal forwards running;
+}
+@-webkit-keyframes badgert {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@keyframes badgert {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+#brands>div>.badge>span{
+  pointer-events: none;
+  display: block;
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20%;
+  transform: rotate(-20deg);
+  transform-origin: center center;
+  margin-top: 44px;
+}
+#brands img{
+  width: 60%;
+  margin: 15px 20%;
+}
+
+
+#featured{
+  width: 100%;
+  padding: 88px 0px;
+  background-color: #fce2e9;
+}
+#featured>.container>.title>h2{
+  margin-top: 7px;
+  font-size: 1.85em;
+  margin-top: 0px;
+  line-height: 1.3em;
+  font-family: sangbleu;
+  margin-bottom: 44px;
+}
+#featured .col>.block{
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  pointer-events: none;
+}
+#featured .col>.block>.decal{
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #ff2d40;
+}
+#featured .col>.block>.decal>.number{
+  pointer-events: none;
+  display: block;
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5%;
+  transform: rotate(12deg);
+  transform-origin: center center;
+  margin-top: 31px;
+  color: #fff;
+}
+#featured .col:nth-child(2)>.block>.decal{
+  top: 10px;
+  right: 10px;
+}
+#featured .col:nth-child(3)>.block>.decal{
+  top: 200px;
+  right: 10px;
+}
+#featured .col:nth-child(3)>.block>.decal>.number{
+  transform: rotate(-8deg);
+}
+#featured .col:nth-child(4)>.block>.decal>.number{
+  transform: rotate(6deg);
+}
+#featured .col>.block>img{
+  display: block;
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 2px;
+  pointer-events: all;
+}
+#featured .col>.block>.bottom>.catcit{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding-top: 7px;
+  color: #aaa;
+}
+#featured .col>.block>.bottom>.catcit>span{
+  pointer-events: all;
+}
+#featured .col>.block>.bottom>.title{
+  font-weight: 500;
+  font-size: 1.25em;
+}
+#featured .col>.block>.bottom>.title>span{
+  pointer-events: all;
+}
+#featured .col>.block>.bottom>.price>span{
+  pointer-events: all;
+}
+#featured .col>.block>.bottom>.price>.oldprice{
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 10px;
+}
+#featured .col>.block>.bottom>.price>.newprice{
+  color: #ff2d40;
+}
+#featured .col>.block>.bottom>.price>.newprice:before{
+  content:  '→';
+  color: #222;
+  margin-right: 10px;
+}
+
+.four-col-block{
+  width: 100%;
+  padding: 132px 0px;
+  background-color: #fff;
+}
+.four-col-block>.container>.title>h2{
+  margin-top: 7px;
+  font-size: 1.85em;
+  margin-top: 0px;
+  line-height: 1.3em;
+  font-family: sangbleu;
+  margin-bottom: 44px;
+}
+.four-col-block .col>.block{
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  pointer-events: none;
+  margin-bottom: 33px;
+}
+.four-col-block .col>.block>.decal{
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #ff2d40;
+}
+.four-col-block .col>.block>.decal>.number{
+  pointer-events: none;
+  display: block;
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5%;
+  transform: rotate(12deg);
+  transform-origin: center center;
+  margin-top: 31px;
+  color: #fff;
+}
+.four-col-block .col:nth-child(2)>.block>.decal{
+  top: 10px;
+  right: 10px;
+}
+.four-col-block .col:nth-child(3)>.block>.decal{
+  top: 200px;
+  right: 10px;
+}
+.four-col-block .col:nth-child(3)>.block>.decal>.number{
+  transform: rotate(-8deg);
+}
+.four-col-block .col:nth-child(4)>.block>.decal>.number{
+  transform: rotate(6deg);
+}
+.four-col-block .col>.block>img{
+  display: block;
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 2px;
+  pointer-events: all;
+}
+.four-col-block .col>.block>.bottom>.catcit{
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding-top: 7px;
+  color: #aaa;
+}
+.four-col-block .col>.block>.bottom>.catcit>span{
+  pointer-events: all;
+}
+.four-col-block .col>.block>.bottom>.title{
+  font-weight: 500;
+  font-size: 1.25em;
+}
+.four-col-block .col>.block>.bottom>.title>span{
+  pointer-events: all;
+}
+.four-col-block .col>.block>.bottom>.price>span{
+  pointer-events: all;
+}
+.four-col-block .col>.block>.bottom>.price>.oldprice{
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 10px;
+}
+.four-col-block .col>.block>.bottom>.price>.newprice{
+  color: #ff2d40;
+}
+.four-col-block .col>.block>.bottom>.price>.newprice:before{
+  content:  '→';
+  color: #222;
+  margin-right: 10px;
+}
+.four-col-block .viewmore{
+  margin-top: 22px;
+}
+.four-col-block .viewmore>a{
+  font-size: 1.2em;
+  color: #1946f7;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+.four-col-block .viewmore>a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.pino{
+//  position: fixed;
+  margin-top: 7px;
+  max-width: 100%;
+}
+.pepino{
+  max-width: 60%;
+  font-size: 2em;
+  margin-top: -8px;
+  line-height: 1.3em;
+  font-family: sangbleu;
+}
+
+.prepino{
+  position: fixed;
+  margin-top: 7px;
+  max-width: 100%;
+  z-index: 1000;
+  display: none;
+  opacity: .5;
+}
