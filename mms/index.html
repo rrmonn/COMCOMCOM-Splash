@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/madmonks.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body onload="runner();">
+
+  <!-- Add your site or application content here -->
+  <div id="composition">a</div>
+  <div id="wrapper"></div>
+    <header>
+      <div class="nav">
+      </div>
+      <div class="menu">
+      </div>
+    </header>
+    <div id="content">
+      Content
+    </div>
+    <footer>
+      <div class="left">&copy; Mad Monks Studio 2020</div>
+      <div class="right"></div>
+    </footer>
+  </div>
+  <div id="cookies">
+    🍪🍪🍪
+    <br>
+    <button onclick="cookiesRejected()">Reject</button>
+    <button onclick="cookiesAccepted()">Accept</button>
+  </div>
+  <div id="subscribe">
+    🍪🍪🍪
+    <br>
+    <button onclick="checkCookiesPolicy()">Check Cookies</button>
+    <button onclick="eraseCookiesPolicy()">Erase Cookies</button>
+  </div>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <script>
+    function runner(){
+      console.log("Runner")
+      const cookiesPolicy = localStorage.getItem('cookiesPolicy');
+      if (cookiesPolicy === null){
+        console.log('no cookies')
+        document.getElementById('cookies').style.display = 'block';
+      } 
+      else if (cookiesPolicy === 'rejected'){
+        console.log('rejected cookies')
+      };
+    }
+    function cookiesRejected(){
+      console.log("Rejected")
+      localStorage.setItem('cookiesPolicy', 'rejected');
+    }
+    function cookiesAccepted(){
+      console.log("Accepted")
+      localStorage.setItem('cookiesPolicy', 'accepted');
+    }
+    function checkCookiesPolicy(){
+      const cookiesPolicy = localStorage.getItem('cookiesPolicy');
+      console.log(cookiesPolicy);
+    }
+    function eraseCookiesPolicy(){
+      localStorage.removeItem('cookiesPolicy');
+      console.log('Deleted cookiesPolicy');
+    }
+    function subscribePopClose(){
+      localStorage.setItem('subscribePop', 'close');
+    }
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
