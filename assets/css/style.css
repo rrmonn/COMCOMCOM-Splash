@@ -38,7 +38,7 @@ body {
   left: 10;
   width: 42px;
   height: 42px;
-  background-color: yellow;
+  background-color: #faf06f;
   /*background-image: url("http://www.nord.plus/assets/images/background-noise.gif");*/
   border-radius: 100px;
   z-index: -1;

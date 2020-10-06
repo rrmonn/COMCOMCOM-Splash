@@ -1,0 +1,555 @@
+@charset "UTF-8";
+/* line 1, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.top, .middle, .bottom {
+  display: block;
+  position: relative;
+  width: 100%; }
+
+/* line 7, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.top {
+  background-color: #fff; }
+
+/* line 10, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.middle {
+  background-color: #fff;
+  padding-top: 10px; }
+
+/* line 15, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#bottom {
+  height: 400px;
+  background-color: #d6defe; }
+
+/* line 19, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#anouncements {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 0px;
+  position: relative;
+  font-family: sangbleu; }
+
+/* line 28, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#anouncements > .inner {
+  background-color: #d6defe;
+  text-align: center;
+  height: 33px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 7px;
+  font-size: .95em;
+  font-weight: 500; }
+
+/* line 38, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#anouncements > .inner > span:hover {
+  text-decoration: underline;
+  cursor: pointer; }
+
+/* line 42, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#logo {
+  display: block;
+  position: sticky;
+  float: left;
+  top: 10px;
+  left: 10px;
+  width: 155px;
+  height: 44px;
+  background-color: #fbc340;
+  text-align: center;
+  overflow: hidden;
+  z-index: 100; }
+
+/* line 55, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#logo > span {
+  font-weight: 500;
+  color: #222;
+  display: block;
+  padding-top: 12px;
+  letter-spacing: .05em;
+  pointer-events: none; }
+
+/* line 63, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#login {
+  display: block;
+  position: sticky;
+  float: right;
+  top: 10px;
+  right: 10px;
+  width: auto;
+  height: 44px;
+  padding-left: 44px;
+  padding-right: 44px;
+  background-color: #222;
+  text-align: center;
+  overflow: hidden;
+  z-index: 100; }
+
+/* line 78, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#login > span {
+  font-weight: 300;
+  display: block;
+  padding-top: 12px;
+  pointer-events: none;
+  color: #fff; }
+
+/* line 85, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#login:hover > span {
+  text-decoration: underline; }
+
+/* line 88, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#settings {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: auto;
+  height: 33px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #f7f7f7;
+  text-align: center;
+  overflow: hidden;
+  float: right;
+  cursor: pointer;
+  z-index: 100; }
+
+/* line 104, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#settings > span {
+  font-weight: 300;
+  color: #222;
+  display: block;
+  padding-top: 7px;
+  pointer-events: none; }
+
+/* line 111, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#settings:hover > span {
+  text-decoration: underline; }
+
+/* line 118, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero {
+  display: block;
+  width: 100%;
+  margin-top: -10px;
+  position: relative; }
+
+/* line 125, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .bg {
+  display: block;
+  position: absolute;
+  float: right;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 352px; }
+
+/* line 137, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .bg > .media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; }
+
+/* line 143, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .bg > .media > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: .8; }
+
+/* line 151, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .data {
+  display: block;
+  width: 40%;
+  padding: 258px 0px 268px 44px;
+  position: relative;
+  overflow: hidden; }
+
+/* line 159, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .data > h1 {
+  margin-top: 7px;
+  max-width: 520px;
+  font-size: 2em;
+  margin-top: -8px;
+  line-height: 1.3em;
+  font-family: sangbleu; }
+
+/* line 167, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .data > p {
+  max-width: 80%;
+  font-size: 1.2em;
+  padding-top: 16px; }
+
+/* line 172, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .data > .search {
+  height: 44px;
+  width: 100%;
+  background-color: #f7f7f7;
+  line-height: 48px;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #aaa;
+  box-sizing: border-box;
+  padding-left: 44px;
+  margin-top: 35px; }
+
+/* line 184, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .data > .latest {
+  padding-top: 17px;
+  max-width: 100%;
+  height: 22px;
+  overflow: hidden; }
+
+/* line 190, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .data > .latest > span {
+  display: inline-block;
+  padding: 0px 10px;
+  background-color: #d6defe;
+  font-size: 12px;
+  height: 22px;
+  overflow: hidden;
+  margin-bottom: -5px;
+  line-height: 26px; }
+
+/* line 200, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#hero > .data > .latest > span.info {
+  background-color: transparent;
+  font-weight: 500;
+  padding-left: 0px; }
+
+/* line 206, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#brands {
+  width: 100%;
+  padding: 132px 0px; }
+
+/* line 210, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#brands > div {
+  position: relative; }
+
+/* line 213, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#brands > div > .badge {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  margin-left: -88px;
+  margin-top: -66px; }
+
+/* line 221, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#brands > div > .badge > .bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/badge.svg);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+  -webkit-animation: badgert 10s linear 0s infinite normal forwards running;
+  animation: badgert 10s linear 0s infinite normal forwards running; }
+
+@-webkit-keyframes badgert {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes badgert {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/* line 242, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#brands > div > .badge > span {
+  pointer-events: none;
+  display: block;
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20%;
+  transform: rotate(-20deg);
+  transform-origin: center center;
+  margin-top: 44px; }
+
+/* line 254, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#brands img {
+  width: 60%;
+  margin: 15px 20%; }
+
+/* line 260, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured {
+  width: 100%;
+  padding: 88px 0px;
+  background-color: #fce2e9; }
+
+/* line 265, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured > .container > .title > h2 {
+  margin-top: 7px;
+  font-size: 1.85em;
+  margin-top: 0px;
+  line-height: 1.3em;
+  font-family: sangbleu;
+  margin-bottom: 44px; }
+
+/* line 273, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block {
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  pointer-events: none; }
+
+/* line 279, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .decal {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #ff2d40; }
+
+/* line 289, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .decal > .number {
+  pointer-events: none;
+  display: block;
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5%;
+  transform: rotate(12deg);
+  transform-origin: center center;
+  margin-top: 31px;
+  color: #fff; }
+
+/* line 302, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col:nth-child(2) > .block > .decal {
+  top: 10px;
+  right: 10px; }
+
+/* line 306, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col:nth-child(3) > .block > .decal {
+  top: 200px;
+  right: 10px; }
+
+/* line 310, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col:nth-child(3) > .block > .decal > .number {
+  transform: rotate(-8deg); }
+
+/* line 313, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col:nth-child(4) > .block > .decal > .number {
+  transform: rotate(6deg); }
+
+/* line 316, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > img {
+  display: block;
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 2px;
+  pointer-events: all; }
+
+/* line 325, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .catcit {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding-top: 7px;
+  color: #aaa; }
+
+/* line 332, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .catcit > span {
+  pointer-events: all; }
+
+/* line 335, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .title {
+  font-weight: 500;
+  font-size: 1.25em; }
+
+/* line 339, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .title > span {
+  pointer-events: all; }
+
+/* line 342, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .price > span {
+  pointer-events: all; }
+
+/* line 345, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .price > .oldprice {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 10px; }
+
+/* line 350, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .price > .newprice {
+  color: #ff2d40; }
+
+/* line 353, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+#featured .col > .block > .bottom > .price > .newprice:before {
+  content: '→';
+  color: #222;
+  margin-right: 10px; }
+
+/* line 359, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block {
+  width: 100%;
+  padding: 132px 0px;
+  background-color: #fff; }
+
+/* line 364, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block > .container > .title > h2 {
+  margin-top: 7px;
+  font-size: 1.85em;
+  margin-top: 0px;
+  line-height: 1.3em;
+  font-family: sangbleu;
+  margin-bottom: 44px; }
+
+/* line 372, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block {
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  pointer-events: none;
+  margin-bottom: 33px; }
+
+/* line 379, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .decal {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #ff2d40; }
+
+/* line 389, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .decal > .number {
+  pointer-events: none;
+  display: block;
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 5%;
+  transform: rotate(12deg);
+  transform-origin: center center;
+  margin-top: 31px;
+  color: #fff; }
+
+/* line 402, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col:nth-child(2) > .block > .decal {
+  top: 10px;
+  right: 10px; }
+
+/* line 406, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col:nth-child(3) > .block > .decal {
+  top: 200px;
+  right: 10px; }
+
+/* line 410, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col:nth-child(3) > .block > .decal > .number {
+  transform: rotate(-8deg); }
+
+/* line 413, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col:nth-child(4) > .block > .decal > .number {
+  transform: rotate(6deg); }
+
+/* line 416, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > img {
+  display: block;
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 2px;
+  pointer-events: all; }
+
+/* line 425, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .catcit {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding-top: 7px;
+  color: #aaa; }
+
+/* line 432, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .catcit > span {
+  pointer-events: all; }
+
+/* line 435, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .title {
+  font-weight: 500;
+  font-size: 1.25em; }
+
+/* line 439, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .title > span {
+  pointer-events: all; }
+
+/* line 442, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .price > span {
+  pointer-events: all; }
+
+/* line 445, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .price > .oldprice {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 10px; }
+
+/* line 450, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .price > .newprice {
+  color: #ff2d40; }
+
+/* line 453, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .col > .block > .bottom > .price > .newprice:before {
+  content: '→';
+  color: #222;
+  margin-right: 10px; }
+
+/* line 458, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .viewmore {
+  margin-top: 22px; }
+
+/* line 461, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .viewmore > a {
+  font-size: 1.2em;
+  color: #1946f7;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none; }
+
+/* line 468, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.four-col-block .viewmore > a:hover {
+  text-decoration: underline; }
+
+/* line 477, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.pino {
+  margin-top: 7px;
+  max-width: 100%; }
+
+/* line 482, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.pepino {
+  max-width: 60%;
+  font-size: 2em;
+  margin-top: -8px;
+  line-height: 1.3em;
+  font-family: sangbleu; }
+
+/* line 490, /Users/rrmonn/Github/Colorab/assets/css/paperback.scss */
+.prepino {
+  position: fixed;
+  margin-top: 7px;
+  max-width: 100%;
+  z-index: 1000;
+  display: none;
+  opacity: .5; }
+
+/*# sourceMappingURL=paperback.css.map */

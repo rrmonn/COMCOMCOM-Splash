@@ -1,0 +1,48 @@
+@font-face {
+  font-family: visuelt;
+  src: url(../types/visuelt-light-pro.woff2);
+  font-weight: 300; }
+
+@font-face {
+  font-family: visuelt;
+  src: url(../types/visuelt-medium-pro.woff2);
+  font-weight: 500; }
+
+@font-face {
+  font-family: sangbleu;
+  src: url(../types/sangbleusans-light.woff2);
+  font-weight: 300; }
+
+@font-face {
+  font-family: sangbleu;
+  src: url(../types/sangbleusans-regular.woff2);
+  font-weight: 500; }
+
+/* line 23, /Users/rrmonn/Github/colorab-layout/assets/css/main.scss */
+body {
+  -webkit-font-feature-settings: 'liga' 1;
+  font-feature-settings: 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: visuelt,helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: normal;
+  word-break: keep-all;
+  margin: 0;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  color: #222;
+  background-color: #d6defe; }
+
+/* line 40, /Users/rrmonn/Github/colorab-layout/assets/css/main.scss */
+p {
+  max-width: 600px;
+  font-size: 1em; }
+
+/* line 44, /Users/rrmonn/Github/colorab-layout/assets/css/main.scss */
+b {
+  font-weight: 500; }
+
+/*# sourceMappingURL=main.css.map */
