@@ -40,13 +40,16 @@
           <li><a href="#">The Studio</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><span class="subscribe" onclick="openSubscriptionBox()">Subscribe</span></li>
-          <li><span class="icon"><a href="https://instagram.com" target="_blank"><img src="img/ig.svg"></a></span><span class="icon"><a href="https://youtube.com" target="_blank"><img src="img/ig.svg"></a></span></li>
+          <li><span class="icon"><a href="https://instagram.com" target="_blank"><img src="img/ig.svg"></a></span><span class="icon"><a href="https://youtube.com" target="_blank"><img src="img/yt.svg"></a></span><span class="icon"><a href="https://instagram.com" target="_blank"><img src="img/spot.svg"></a></span></li>
         </ul>
       </div>
     </header>
     <div id="content">
       <div id="about">
-        <div class="comp-one">
+        <div id="comp-one" class="comp-one">
+          <div id="comp-one-bg" class="bg">
+            <img src="img/AHOP2600_edit 3.png">
+          </div>
           <div class="hero">
             <div class="top">
               <div class="copy">
@@ -61,9 +64,8 @@
               <p>We give importance to the social impact of art. We value artistic compositions that have a universal visual and sonic language. A language that evokes a certain type of realization or feeling that brings a new perspective in the spectator’s life. We believe an important function of art is to reveal transcendence of duality.</p>
             </div>
           </div>
-          <div class="bg">
-            <img src="img/AHOP2600_edit 3.png">
-          </div>
+          
+          
         </div>
         <div class="comp-two">
           <div class="pic">
@@ -96,7 +98,7 @@
     </div>
     <footer>
       <div class="left">®2020. madmonkstudios.com</div>
-      <div class="right"></div>
+      <div class="right"><a href="#">Privacy Policy</a></div>
     </footer>
   </div>
   <!-- 
@@ -138,8 +140,8 @@
     document.addEventListener('mousemove', fn, false);
     function fn(e) {
         for (var i=tooltip.length; i--;) {
-            tooltip[i].style.left = e.pageX + 'px';
-            tooltip[i].style.top = e.pageY + 'px';
+            tooltip[i].style.left = e.clientX + 'px';
+            tooltip[i].style.top = e.clientY + 'px';
         }
     }
   </script>
@@ -154,6 +156,11 @@
       else if (cookiesPolicy === 'rejected'){
         console.log('rejected cookies')
       };
+
+      
+      var compOneBgHeight = document.getElementById('comp-one-bg').clientHeight;
+      document.getElementById('comp-one').style.height = compOneBgHeight+'px';
+
     }
     function cookiesRejected(){
       console.log("Rejected")

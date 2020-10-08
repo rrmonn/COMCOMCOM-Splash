@@ -103,8 +103,8 @@
     document.addEventListener('mousemove', fn, false);
     function fn(e) {
         for (var i=tooltip.length; i--;) {
-            tooltip[i].style.left = e.pageX + 'px';
-            tooltip[i].style.top = e.pageY + 'px';
+            tooltip[i].style.left = e.clientX + 'px';
+            tooltip[i].style.top = e.clientY + 'px';
         }
     }
   </script>
@@ -284,7 +284,7 @@
   * The callback parameter executes the initMap() function
   -->
   <script defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKQRp-XtxJZW9Trgeb-QQpY1Act2Wf1EM&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key=KEYKEYKEY&callback=initMap">
   </script>
 
   <script>
