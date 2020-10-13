@@ -27,11 +27,22 @@
 
   <!-- Add your site or application content here -->
   <div id="wrapper"></div>
+    <div id="menu-mobile" style="display: none;">
+      <ul>
+        <li><span class="disabled soon"><span class="menuitem">Live Sessions</span></span></li>
+        <li><span class="disabled soon"><span class="menuitem">Projects</span></span></li>
+        <li><a href="about.html">The Studio</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><span class="icon"><a href="https://instagram.com" target="_blank"><img src="img/ig.svg"></a></span><span class="icon"><a href="https://youtube.com" target="_blank"><img src="img/ig.svg"></a></span></li>
+      </ul>
+      <div class="close" onclick="menuMobile()"><img src="img/Cerrar.svg"/></div>
+    </div>
     <header>
       <div class="nav">
         <div class="logo">
           <img src="img/logo.svg">
         </div>
+        <div class="burguer" onclick="menuMobile()"><img src="img/burguer.svg"/></div>
       </div>
       <div class="menu">
         <ul>
@@ -62,7 +73,7 @@
     </div>
     <footer>
       <div class="left">®2020. madmonkstudios.com</div>
-      <div class="right"></div>
+      <div class="right"><a href="#">Privacy Policy</a></div>
     </footer>
   </div>
   <!-- 
@@ -318,6 +329,15 @@
     function subscribePopClose(){
       localStorage.setItem('subscribePop', 'close');
     }
+    function menuMobile(){
+      var menu = document.getElementById('menu-mobile');
+      if (menu.style.display == 'none'){
+        menu.style.display = 'block';
+      }
+      else {
+        menu.style.display = 'none';
+      }
+    }
   </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -327,5 +347,4 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>

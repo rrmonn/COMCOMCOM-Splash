@@ -27,11 +27,22 @@
 
   <!-- Add your site or application content here -->
   <div id="wrapper"></div>
+    <div id="menu-mobile" style="display: none;">
+      <ul>
+        <li><span class="disabled soon"><span class="menuitem">Live Sessions</span></span></li>
+        <li><span class="disabled soon"><span class="menuitem">Projects</span></span></li>
+        <li><a href="#">The Studio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><span class="icon"><a href="https://instagram.com" target="_blank"><img src="img/ig.svg"></a></span><span class="icon"><a href="https://youtube.com" target="_blank"><img src="img/ig.svg"></a></span></li>
+      </ul>
+      <div class="close" onclick="menuMobile()"><img src="img/Cerrar.svg"/></div>
+    </div>
     <header>
       <div class="nav">
         <div class="logo">
           <img src="img/logo.svg">
         </div>
+        <div class="burguer" onclick="menuMobile()"><img src="img/burguer.svg"/></div>
       </div>
       <div class="menu">
         <ul>
@@ -53,19 +64,17 @@
           <div class="hero">
             <div class="top">
               <div class="copy">
-                MUSIC RECORDING & AUDIOVISUAL PRODUCTION
+                MUSIC PRODUCTION & AUDIOVISUAL EXPERIENCES
               </div>
               <div class="subcopy">
-                Far far away, behind the word mountains, far from the countries.
+                Exploring artistic expressions to find transformational value.
               </div>
             </div>
             <div class="left">
-              <span>Subtitle</span><br>
-              <p>We give importance to the social impact of art. We value artistic compositions that have a universal visual and sonic language. A language that evokes a certain type of realization or feeling that brings a new perspective in the spectator’s life. We believe an important function of art is to reveal transcendence of duality.</p>
+              <p>Mad Monk Studios® explores the heights of transcendence through music production and audiovisual experiences. Based in Mexico City, MMS creates a unique artistic platform that offers the infrastructure and expertise to help artists discover, transform and showcase their exceptional talents in a universal way.
+              </p>
             </div>
           </div>
-          
-          
         </div>
         <div class="comp-two">
           <div class="pic">
@@ -82,17 +91,20 @@
           </div>
         </div>
         <div class="comp-three">
-          <div class="top">
-            <div class="copy">
-              MUSIC RECORDING & AUDIOVISUAL PRODUCTION
-            </div>
-            <div class="subcopy">
-              Far far away, behind the word mountains, far from the countries.
-            </div>
+          <div class="left">
+            <h2>HARNESSING THE POWER OF SPACE AND SOUND TO EVOKE STATES OF AWE.</h2>
+          </div>
+          <div class="right">
+            <p>At the crossroads of economic, political & social changes we believe our world needs moments of reflection, harmony and awe. Committed to the social impact of art, Mad Monk Studios® unveils an alternative process of artistic creation, providing a temple for artists to synchronize the energies of stillness and action, find their ‘why’ and transform it into honest, globally competitive productions to offer their audiences mindbending experiences with cultural relevance, positive impact and an opportunity to connect within.</p>
           </div>
         </div>
         <div class="comp-four">
-          <img src="img/AHOP2026_edit 1.png"/>
+          <div class="left">
+            <img src="img/AHOP2600_edit 4.png"/>
+          </div>
+          <div class="right">
+            <img src="img/AHOP2600_edit 5.png"/>
+          </div>
         </div>
       </div>
     </div>
@@ -180,6 +192,15 @@
     }
     function subscribePopClose(){
       localStorage.setItem('subscribePop', 'close');
+    }
+    function menuMobile(){
+      var menu = document.getElementById('menu-mobile');
+      if (menu.style.display == 'none'){
+        menu.style.display = 'block';
+      }
+      else {
+        menu.style.display = 'none';
+      }
     }
   </script>
 
