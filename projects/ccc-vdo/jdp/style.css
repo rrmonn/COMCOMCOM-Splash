@@ -1,0 +1,39 @@
+.project {
+    position: relative;
+    width: 100vw;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.grid-item {
+    display: inline-block;
+    float: left;
+    width: 10%;
+}
+
+.teaser {
+    width: 20%;
+    /* height: calc(100vh - 6vw); */
+    background-color: white;
+    object-fit: fill;
+    display: inline-block;
+    float: left;
+    pointer: auto !important;
+    position: relative;
+}
+
+.image {
+  transform-origin: center center;
+}
+
+.teaser img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
